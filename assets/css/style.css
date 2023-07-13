@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 
+font-family: 'Chela One', cursive;
+font-family: 'Fasthand', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif; 
+*/
+
+
+/**********************
+* Common CSS - Start
+**********************/
+.container{
+    width: 80%;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+}
+.t-left{
+    text-align: left;
+}
+.t-right{
+    text-align: right;
+}
+.t-center{
+    text-align: center;
+}
+.row{
+    display: flex;
+}
+.col-3{
+    width: 25%;
+}
+.col-9{
+    width: 75%;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.my-10{
+    margin: 10px 0;
+}
+.w-100{
+    width: 100%;
+    display: block;
+}
+.bb{
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+}
+.p-15{
+    padding: 15px;
+}
+/**********************
+* Common CSS - End
+**********************/
+
+/**********************
+* Editor CSS - Start
+**********************/
+/* Editor Scrollbar  */
+/* width */
+.editor-body::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .editor-body::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .editor-body::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  .editor-body::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/* Editor head  */
+.editor-head{
+    position: fixed;
+    top: 0;
+    width: 25%;
+}
+.editor-head, .editor-footer{
+    background-color: #000;
+    color: #fff;
+    justify-content: space-between;
+    padding: 8px 10px;
+    align-items: center;
+}
+.editor-head i, .editor-footer i{
+    cursor: pointer;
+}
+
+/* editor body  */
+.editor-body {
+    margin: 40px 0 0 0;
+    height: 90vh;
+    overflow-y: scroll;
+}
+.editor-body-tabs{
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.editor-body-tab{
+    width: 33.33%;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.editor-body-tab.active{
+    border-bottom: 3px solid #000;
+}
+.editor-body-tab span{
+    display: block;
+    text-align: center;
+}
+.editor-body-tab span:last-child{
+    font-size: 10px;
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active{
+    display: block;
+}
+
+
+/* editor body css  */
+.editor-options input, .editor-options textarea, .editor-options select{
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.editor-options label{
+}
+
+#heading-input, #paragraph-input{
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 5px 0;
+}
+#heading-tag{
+    width: 80px;
+}
+
+/* editor style  */
+.editor-tab-style h4{
+    background-color: #ccc;
+    text-align: center;
+    margin: 20px 0;
+}
+.style-list li{
+    padding: 10px 0;
+}
+
+/* editor footer  */
+.editor-footer{
+    position: fixed;
+    bottom: 0;
+    width: 25%;
+}
+.save-element{
+    cursor: pointer;
+    padding: 0 10px;
+    background-color: #fff;
+    border: none;
+}
+
+/**********************
+* Editor CSS - End
+**********************/
+
+/**********************
+* Output CSS - Start
+**********************/
+.output{
+    background-color: #d7dbde;
+}
+/**********************
+* Output CSS - End
+**********************/
+
+

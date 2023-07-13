@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementor's Cousins</title>
+    <!-- fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chela+One&family=Fasthand&family=Inter&family=Josefin+Sans&family=Lato&family=Montserrat&family=Noto+Sans&family=Poppins&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style css  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <!-- editor start  -->
+      <div class="col-3">
+        <div class="editor">
+          <!-- editor head start -->
+          <div class="editor-head d-flex">
+            <p class="global-settings"><i class="fa-solid fa-bars"></i></p>
+            <p class="element-name">Text Box</p>
+            <p class="all-modules"><i class="fa-solid fa-grip-dots"></i></p>
+          </div>
+          <!-- editor head end  -->
+
+          <!-- editor body start  -->
+          <div class="editor-body">
+            <!-- editor options tab start  -->
+            <div class="editor-body-tabs d-flex">
+              <div class="editor-body-tab">
+                <span><i class="fa-light fa-pen"></i></span>
+                <span>Content</span>
+              </div>
+              <div class="editor-body-tab">
+                <span><i class="fa-solid fa-circle-half-stroke"></i></span>
+                <span>Style</span>
+              </div>
+              <div class="editor-body-tab">
+                <span><i class="fa-regular fa-gear"></i></span>
+                <span>Advanced</span>
+              </div>
+            </div>
+            <!-- editor options tab end  -->
+
+            <!-- editor options body start  -->
+            <div class="editor-options">
+              <!-- editor tab content start  -->
+              <div class="p-15 tab-content editor-tab-content">
+                <!-- heading input start  -->
+                <div class="heading-input-wrap bb">
+                  <div>
+                    <label for="heading-input">Heading</label>
+                    <textarea id="heading-input"></textarea>
+                  </div>
+
+                  <div class="d-flex jcsb my-10">
+                    <label for="heading-tag">HTML Tag</label>
+                    <select id="heading-tag">
+                      <option value="h1">H1</option>
+                      <option value="h2">H2</option>
+                      <option value="h3">H3</option>
+                      <option value="h4">H4</option>
+                      <option value="h5">H5</option>
+                      <option value="h6">H6</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- heading input end  -->
+
+                <!-- paragraph input start  -->
+                <div class="paragraph-input-wrap bb">
+                    <div>
+                        <label for="paragraph-input">Paragraph</label>
+                        <textarea id="paragraph-input"></textarea>
+                    </div>
+                </div>
+                <!-- paragraph input end  -->
+
+                <!-- button input start  -->
+                <div class="button-input-wrap bb">
+                    <div>
+                        <label for="btn-text">Button Text</label>
+                        <input class="w-100" type="text" id="btn-text" value="Click Here">
+                    </div>
+                    <div>
+                        <label for="btn-url">Button URL</label>
+                        <input type="url" class="w-100" id="btn-url" placeholder="https://">
+                    </div>
+                </div>
+                <!-- button input end  -->
+              </div>
+              <!-- editor tab content end  -->
+
+              <!-- editor tab style start  -->
+              <div class="p-15 tab-content   editor-tab-style">
+                <!-- heading style start  -->
+                <div>
+                    <h4>Heading Style</h4>
+                    <ul class="style-list">
+                        <li class="d-flex jcsb">
+                            <label for="heading-color">Color</label>
+                            <input type="color" id="heading-color">
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="heading-bg">Background Color</label>
+                            <input type="color" id="heading-bg">
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="heading-size">Font Size</label>
+                            <input type="range" id="heading-size" min="16" max="100">
+                            <select id="heading-fs-unit">
+                                <option value="px">px</option>
+                                <option value="%">%</option>
+                                <option value="rem">rem</option>
+                                <option value="em">em</option>
+                            </select>
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="heading-size">Font Family</label>
+                            <select id="heading-size">
+                                <option value="Poppins">Poppins</option>
+                                <option value="Chela One">Chela One</option>
+                                <option value="Roboto Slab">Roboto Slab</option>
+                                <option value="Noto Sans">Noto Sans</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Lato">Lato</option>
+                                <option value="Josefin Sans">Josefin Sans</option>
+                                <option value="Inter">Inter</option>
+                                <option value="Fasthand">Fasthand</option>
+                            </select>
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="heading-padding">Padding</label>
+                            <input type="range" id="heading-padding"> px
+                        </li>
+                    </ul>
+                </div>
+                <!-- heading style end  -->
+
+                <!-- paragraph style start  -->
+                <div>
+                    <h4>Paragraph Style</h4>
+                    <ul class="style-list">
+                        <li class="d-flex jcsb">
+                            <label for="para-color">Color</label>
+                            <input type="color" id="para-color">
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="para-bg">Background Color</label>
+                            <input type="color" id="para-bg">
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="para-size">Font Size</label>
+                            <input type="range" id="para-size" min="16" max="100">
+                            <select id="para-fs-unit">
+                                <option value="px">px</option>
+                                <option value="%">%</option>
+                                <option value="rem">rem</option>
+                                <option value="em">em</option>
+                            </select>
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="para-size">Font Family</label>
+                            <select id="para-size">
+                                <option value="Poppins">Poppins</option>
+                                <option value="Chela One">Chela One</option>
+                                <option value="Roboto Slab">Roboto Slab</option>
+                                <option value="Noto Sans">Noto Sans</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Lato">Lato</option>
+                                <option value="Josefin Sans">Josefin Sans</option>
+                                <option value="Inter">Inter</option>
+                                <option value="Fasthand">Fasthand</option>
+                            </select>
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="para-padding">Padding</label>
+                            <input type="range" id="para-padding"> px
+                        </li>
+                    </ul>
+                </div>
+                <!-- paragraph style end  -->
+                
+                <!-- button style start  -->
+                <div>
+                    <h4>Button Style</h4>
+                    <ul class="style-list">
+                        <li class="d-flex jcsb">
+                            <label for="btn-color">Color</label>
+                            <input type="color" id="btn-color">
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="btn-bg">Background Color</label>
+                            <input type="color" id="btn-bg">
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="btn-size">Font Size</label>
+                            <input type="range" id="btn-size" min="16" max="100">
+                            <select id="btn-fs-unit">
+                                <option value="px">px</option>
+                                <option value="%">%</option>
+                                <option value="rem">rem</option>
+                                <option value="em">em</option>
+                            </select>
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="btn-size">Font Family</label>
+                            <select id="btn-size">
+                                <option value="Poppins">Poppins</option>
+                                <option value="Chela One">Chela One</option>
+                                <option value="Roboto Slab">Roboto Slab</option>
+                                <option value="Noto Sans">Noto Sans</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Lato">Lato</option>
+                                <option value="Josefin Sans">Josefin Sans</option>
+                                <option value="Inter">Inter</option>
+                                <option value="Fasthand">Fasthand</option>
+                            </select>
+                        </li>
+                        <li class="d-flex jcsb">
+                            <label for="btn-padding">Padding</label>
+                            <input type="range" id="btn-padding"> px
+                        </li>
+                    </ul>
+                </div>
+                <!-- button style end  -->
+              </div>
+              <!-- editor tab style end  -->
+
+              <!-- editor tab advanced start  -->
+              <div class="p-15 tab-content editor-tab-advance"></div>
+              <!-- editor tab advanced end  -->
+            </div>
+            <!-- editor options body end  -->
+          </div>
+          <!-- editor body end  -->
+
+          <!-- editor footer start  -->
+          <div class="editor-footer d-flex">
+            <p class="page-setting"><i class="fa-regular fa-gear"></i></p>
+            <button class="save-element">Update</button>
+          </div>
+          <!-- editor footer end  -->
+        </div>
+      </div>
+      <!-- editor end  -->
+      <div class="col-9">
+        <div class="output">
+          <h1>Heading one</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
+            corrupti esse natus necessitatibus repudiandae ipsam quis iste vel
+            possimus id.
+          </p>
+          <button>Click Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts  -->
+    <script src="./app/data.js"></script>
+    <script src="./app/main.js"></script>
+  </body>
+</html>
